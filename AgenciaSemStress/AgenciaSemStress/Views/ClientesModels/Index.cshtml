@@ -1,0 +1,79 @@
+﻿@model IEnumerable<AgenciaSemStress.Models.ClientesModel>
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1 class="texto">Informações dos Clientes</h1>
+
+<p>
+    <a asp-action="Create" type="button" class="btn btn-cadastro btn-primary">Novo Cliente</a>
+</p>
+<div class="cardCadastro">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CpfCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefoneCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LogradouroCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CidadeCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UFCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NascimentoCliente)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CpfCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefoneCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LogradouroCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CidadeCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UFCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NascimentoCliente)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ClienteID" class="btn btn-cadastro btn-primary">Alterar</a> 
+                <a asp-action="Details" asp-route-id="@item.ClienteID" class="btn btn-cadastro btn-success">Detalhes</a> 
+                <a asp-action="Delete" asp-route-id="@item.ClienteID" class="btn btn-cadastro btn-danger">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

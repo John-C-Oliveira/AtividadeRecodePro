@@ -1,0 +1,63 @@
+﻿@model AgenciaSemStress.Models.DestinosModel
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<h1 class="texto">Apagar</h1>
+
+<h3 class="texto">Deseja apagar o Destino cadastrado?</h3>
+<div class="cardCadastro">
+    <h4>As informações não poderão ser recuperadas após exclusão</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomeDestino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeDestino)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QtdadePessoa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QtdadePessoa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IMGDestino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IMGDestino)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EnderecoDestino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EnderecoDestino)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PaisDestino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PaisDestino)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UFDestino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UFDestino)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataCadastroDestino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataCadastroDestino)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="DestinoID" />
+        <input type="submit" value="Apagar" class="btn btn-cadastro btn-danger" /> 
+        <a asp-action="Index" type="button" class="btn btn-cadastro btn-primary">Voltar</a>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+﻿@model AgenciaSemStress.Models.ReservasModel
+
+@{
+    ViewData["Title"] = "Deletar";
+}
+
+<h1 class="texto text-center">Cancelar Reserva</h1>
+
+<h3 class="texto text-center">Deseja cancelar sua Reserva?</h3>
+<div class="cardCadastro">
+    <h4>Após exclusão, sua vaga na viagem será cancelada</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FKDestinoID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FKDestinoID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FKClienteID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FKClienteID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FKAnuncioID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FKAnuncioID)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ReservaID" />
+        <input type="submit" value="Deletar" class="btn btn-cadastro btn-danger" /> 
+        <a asp-action="Index" type="button" class="btn btn-cadastro btn-primary">Voltar</a>
+    </form>
+</div>

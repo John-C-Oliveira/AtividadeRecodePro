@@ -1,0 +1,54 @@
+﻿@model AgenciaSemStress.Models.AnunciosModel
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1 class="texto">Editar</h1>
+
+<h4 class="texto">Anuncio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 cardCadastro">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AnuncioID" />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="TipoAnuncio" /> @Html.DisplayNameFor(model => model.TipoAnuncio)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorAnuncio" class="control-label"></label>
+                <input asp-for="ValorAnuncio" class="form-control" />
+                <span asp-validation-for="ValorAnuncio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeAnuncio" class="control-label"></label>
+                <input asp-for="NomeAnuncio" class="form-control" />
+                <span asp-validation-for="NomeAnuncio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataSaida" class="control-label"></label>
+                <input asp-for="DataSaida" class="form-control" />
+                <span asp-validation-for="DataSaida" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataRetorno" class="control-label"></label>
+                <input asp-for="DataRetorno" class="form-control" />
+                <span asp-validation-for="DataRetorno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-cadastro btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" type="button" class="btn btn-primary">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

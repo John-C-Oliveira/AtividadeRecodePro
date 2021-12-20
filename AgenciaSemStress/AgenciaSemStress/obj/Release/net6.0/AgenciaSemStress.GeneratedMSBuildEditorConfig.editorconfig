@@ -1,0 +1,124 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AgenciaSemStress
+build_property.RootNamespace = AgenciaSemStress
+build_property.ProjectDir = C:\Users\anaba\Downloads\AgenciaSemStress\AgenciaSemStress\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\anaba\Downloads\AgenciaSemStress\AgenciaSemStress
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/AnunciosModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/AnunciosModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/AnunciosModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/AnunciosModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/AnunciosModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW51bmNpb3NNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ClientesModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ClientesModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ClientesModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ClientesModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ClientesModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/DestinosModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/DestinosModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/DestinosModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/DestinosModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/DestinosModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ReservasModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ReservasModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ReservasModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ReservasModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/ReservasModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anaba/Downloads/AgenciaSemStress/AgenciaSemStress/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qc184ml1gs

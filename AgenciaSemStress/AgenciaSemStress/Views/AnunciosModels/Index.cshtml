@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AgenciaSemStress.Models.AnunciosModel>
+
+@{
+    ViewData["Title"] = "Anuncios";
+}
+
+<h1 class="texto">Informações</h1>
+
+<p>
+    <a asp-action="Create" type="button" class="btn btn-primary">Novo Anuncio</a>
+</p>
+<div class="cardCadastro">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoAnuncio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorAnuncio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeAnuncio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataRetorno)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoAnuncio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorAnuncio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeAnuncio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataRetorno)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AnuncioID" type="button" class="btn-cadastro btn btn-primary">Editar</a> 
+                <a asp-action="Details" asp-route-id="@item.AnuncioID" type="button" class="btn btn-cadastro btn-success">Detalhes</a> 
+                <a asp-action="Delete" asp-route-id="@item.AnuncioID" type="button" class="btn btn-cadastro btn-danger">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

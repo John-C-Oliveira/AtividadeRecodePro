@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AgenciaSemStress.Models.ReservasModel>
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1 class="texto text-center">Lista de Reservas realizadas</h1>
+
+<p>
+    <a asp-action="Create" type="button" class="btn btn-cadastro btn-primary">Nova Reserva</a>
+</p>
+<div class="cardCadastro">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FKDestinoID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FKClienteID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FKAnuncioID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FKDestinoID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FKClienteID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FKAnuncioID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ReservaID" type="button" class="btn btn-cadastro btn-primary">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ReservaID" type="button" class="btn btn-cadastro e btn-success">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReservaID" type="button" class="btn btn-danger btn-cadastro">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

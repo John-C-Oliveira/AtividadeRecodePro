@@ -1,0 +1,36 @@
+﻿@model AgenciaSemStress.Models.ReservasModel
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1 class=" texto text-center">Detalhes</h1>
+
+<div class="cardCadastro">
+    <h4>Detalhes da sua Reserva</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FKDestinoID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FKDestinoID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FKClienteID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FKClienteID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FKAnuncioID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FKAnuncioID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ReservaID" type="button" class="btn btn-cadastro btn-info">Modificar</a> |
+    <a asp-action="Index" type="button" class=" btn btn-cadastro btn-primary">Voltar</a>
+</div>

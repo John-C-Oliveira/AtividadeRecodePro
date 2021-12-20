@@ -1,0 +1,64 @@
+﻿@model AgenciaSemStress.Models.DestinosModel
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1 class="texto">Alterar</h1>
+
+<h4 class="texto">Destinos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 cardCadastro">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DestinoID" />
+            <div class="form-group">
+                <label asp-for="NomeDestino" class="control-label"></label>
+                <input asp-for="NomeDestino" class="form-control" />
+                <span asp-validation-for="NomeDestino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QtdadePessoa" class="control-label"></label>
+                <input asp-for="QtdadePessoa" class="form-control" />
+                <span asp-validation-for="QtdadePessoa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IMGDestino" class="control-label"></label>
+                <input asp-for="IMGDestino" class="form-control" />
+                <span asp-validation-for="IMGDestino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecoDestino" class="control-label"></label>
+                <input asp-for="EnderecoDestino" class="form-control" />
+                <span asp-validation-for="EnderecoDestino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaisDestino" class="control-label"></label>
+                <input asp-for="PaisDestino" class="form-control" />
+                <span asp-validation-for="PaisDestino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UFDestino" class="control-label"></label>
+                <input asp-for="UFDestino" class="form-control" />
+                <span asp-validation-for="UFDestino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataCadastroDestino" class="control-label"></label>
+                <input asp-for="DataCadastroDestino" class="form-control" />
+                <span asp-validation-for="DataCadastroDestino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-cadastro btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" type="button" class="btn btn-cadastro btn-primary">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

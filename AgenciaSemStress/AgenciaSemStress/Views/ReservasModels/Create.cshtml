@@ -1,0 +1,43 @@
+﻿@model AgenciaSemStress.Models.ReservasModel
+
+@{
+    ViewData["Title"] = "Reservas";
+}
+
+<h1 class="texto text-center">Adicioanr Reserva ( Em construção para associação com Destinos)</h1>
+
+<h4 class="texto text-center">Reservas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 cardCadastro">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FKDestinoID" class="control-label"></label>
+                <input asp-for="FKDestinoID" class="form-control" />
+                <span asp-validation-for="FKDestinoID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FKClienteID" class="control-label"></label>
+                <input asp-for="FKClienteID" class="form-control" />
+                <span asp-validation-for="FKClienteID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FKAnuncioID" class="control-label"></label>
+                <input asp-for="FKAnuncioID" class="form-control" />
+                <span asp-validation-for="FKAnuncioID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Reservar" class="btn btn-cadastro btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" type="button" class="btn btn-cadastro btn-primary">Voltar a Lista de Reservas</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<AgenciaSemStress.Models.DestinosModel>
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1 class="texto">Lista de Destinos Cadastrados</h1>
+
+<p>
+    <a asp-action="Create" type="button" class="btn btn-cadastro btn-primary">Novo Cadastro</a>
+</p>
+<div class="cardCadastro">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeDestino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdadePessoa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IMGDestino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnderecoDestino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaisDestino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UFDestino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCadastroDestino)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeDestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdadePessoa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IMGDestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnderecoDestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaisDestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UFDestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastroDestino)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DestinoID" type="button" class="btn btn-cadastro btn-primary">Editar</a> 
+                <a asp-action="Details" asp-route-id="@item.DestinoID" type="button" class=" btn btn-cadastro btn-success">Detalhes</a> 
+                <a asp-action="Delete" asp-route-id="@item.DestinoID" type="button" class="btn btn-cadastro btn-danger">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,51 @@
+﻿@model AgenciaSemStress.Models.AnunciosModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="texto">Excluir</h1>
+
+<h3 class="texto">Deseja Apagar o Anuncio?</h3>
+<div class="cardCadastro">
+    <h4>Não será possivel recuperar as informações após Exclusão!</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoAnuncio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TipoAnuncio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ValorAnuncio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ValorAnuncio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomeAnuncio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeAnuncio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataSaida)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataSaida)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataRetorno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataRetorno)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AnuncioID" />
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a asp-action="Index" type="button" class="btn btn-primary">Voltar</a>
+    </form>
+</div>
